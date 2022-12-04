@@ -1,0 +1,77 @@
+body{
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+main{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+
+    background-color: white;
+    color:black;
+
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+canvas {
+    background: #000000;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#lines{
+    margin-bottom: 2rem;
+}
+
+#errorLetter, #alreadyGuessed{
+    display: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+label, a{
+    font-size: 1.2rem;
+}
+input{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    max-width: 8rem;
+}
+
+a{
+    border: none;
+    background-color: black;
+    color:white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+a:hover{
+    background-color: rgb(155, 12, 12);
+    cursor: pointer;
+}
+
+#again, #winner, #loser{
+    display: none;
+}

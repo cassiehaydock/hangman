@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="imgs/c_logo.png">
+    <link rel="stylesheet" href="styles/HMstyles.css">
+    <script src="scripts/hang.js"></script>
+    <title>Hangman</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Hangman</h1>
+        </div>
+
+        <div class="container">
+            <div>
+                <span id="guessed"></span>
+            </div>
+
+            <!-- canvas to draw the hangman -->
+            <div>
+                <canvas id="gameCanvas" width="500" height="400"></canvas>
+            </div>
+
+            <!-- container that holds the lines for each letter -->
+            <div id="lines">
+
+            </div>
+
+            <!-- where users input their guesses -->
+            <div id="input">
+                <label> Enter a Letter: <input type="text" id="guess" /></label>
+                <a id="letter">guess</a>
+                <span id="errorLetter">Only One Letter Only</span>
+                <span id="alreadyGuessed">Letter has already been guessed</span>
+            </div>
+
+            <!-- play again -->
+            <div id="again">
+                <p id="winner">Congratulations!</p>
+                <p id="loser">Nice Try :)</p>
+                <a id="refresh">play again?</a>
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
