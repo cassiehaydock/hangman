@@ -6,4 +6,4 @@ This version of Hangman is single player. The word is randomly generated from a 
 ## Code
 This project uses JavaScript for the functionality, HTML to build the stage and CSS to style it.
 ## Status
-The game is functionla, but the plan is to continously update the game to include different fetaures and make the game more in depth.
+The game is functional, but the plan is to continously update the game to include different fetaures and make the game more in depth.
