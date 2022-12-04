@@ -153,10 +153,38 @@ document.addEventListener("DOMContentLoaded", function () {
                         ctx.lineTo(270, 330);
                         ctx.stroke();
                         break;
+                    //left eye
+                    case 7:
+                        ctx.strokeStyle = 'black';
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        ctx.moveTo(240, 150);
+                        ctx.lineTo(230, 140);
+                        ctx.stroke();
+                        ctx.moveTo(240, 140);
+                        ctx.lineTo(230, 150);
+                        ctx.stroke();
+                        break;
+                    //right eye
+                    case 8:
+                        ctx.moveTo(270, 150);
+                        ctx.lineTo(260, 140);
+                        ctx.stroke();
+                        ctx.moveTo(270, 140);
+                        ctx.lineTo(260, 150);
+                        ctx.stroke();
+                        break;
+                    //mouth
+                    case 9:
+                        ctx.moveTo(260, 170);
+                        ctx.lineTo(240, 170);
+                        ctx.stroke();
+                        ctx.closePath();
+                        break;
                 }
 
                 //if hangman is complete
-                if (missed == 6) {
+                if (missed == 9) {
                     //display the correct word
                     for (i = 0; i < spaces; i++) {
                         var temp = document.getElementById(i);
