@@ -84,8 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     found = true;
                     alreadyGuessed.style.display = "none";
                     var temp = document.getElementById(i);
-                    temp.innerHTML = letter;
-                    solved += 1;
+                    if (temp.innerHTML != letter) {
+                        temp.innerHTML = letter;
+                        solved += 1;
+                    }
 
                     //if all letters are correctly guessed prompt to play again
                     if (solved == spaces) {
