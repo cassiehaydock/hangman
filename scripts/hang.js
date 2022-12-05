@@ -27,8 +27,33 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.lineTo(250, 120);
     ctx.stroke();
 
-    //Generate word for hangman
-    var words = ['animal', 'rhythm', 'clap', 'monster', 'mall', 'recall', 'corner', 'payroll', 'soccer', 'tall', 'short', 'basketball', 'hockey', 'cup', 'slow', 'glass', 'run', 'slap', 'rock', 'play', 'create', 'tiger', 'cat', 'remember', 'mark', 'recess', 'drink', 'remark', 'machine', 'winner', 'loser'];
+//Generate word for hangman
+    var category = document.getElementById("category")
+    var words = new Array;
+    const selection = Math.floor(Math.random() * 4);
+
+    //animals
+    if(selection == 0)
+    {
+        words = ['tiger', 'cat', 'dog', 'elephant', 'cheetah', 'lion', 'mouse', 'bird', 'platypus', 'alligator', 'crocodile', 'zebra', 'bear', 'mongoose'];
+        category.innerHTML = "animals";
+    }
+    //objects
+    else if(selection == 1)
+    {
+        words = ['glass', 'computer', 'blanket', 'remote', 'fork', 'television', 'desk', 'keyboard', 'retainer', 'umbrella', 'pillow', 'fan'];
+        category.innerHTML = "objects";
+    }//actions
+    else if(selection == 2)
+    {
+        words = ['run', 'levitate', 'smile', 'cry', 'walk', 'jump', 'speak', 'fetch', 'teach', 'push', 'pull', 'study', 'sing'];
+        category.innerHTML = "actions";
+    }
+    //countries
+    else{
+        words = ['canada', 'usa', 'syria', 'egypt', 'mexico', 'russia', 'portugal', 'england', 'turkey', 'australia', 'algeria', 'hungary', 'bahamas', 'argentina', 'bangladesh']
+    }
+
     const index = Math.floor(Math.random() * words.length);
     var chosen = words[index];
 
