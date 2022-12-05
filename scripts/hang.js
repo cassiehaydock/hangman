@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //countries
     else{
         words = ['canada', 'usa', 'syria', 'egypt', 'mexico', 'russia', 'portugal', 'england', 'turkey', 'australia', 'algeria', 'hungary', 'bahamas', 'argentina', 'bangladesh']
+        category.innerHTML = "countries";
     }
 
     const index = Math.floor(Math.random() * words.length);
