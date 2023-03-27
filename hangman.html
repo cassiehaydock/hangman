@@ -26,7 +26,7 @@
 
             <!-- canvas to draw the hangman -->
             <div>
-                <canvas id="gameCanvas" width="500" height="400"></canvas>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
             </div>
 
             <!-- container that holds the lines for each letter -->
@@ -36,10 +36,10 @@
 
             <!-- where users input their guesses -->
             <div id="input">
-                <label> Enter a Letter: <input type="text" id="guess" /></label>
+                <label><input type="text" id="guess" /></label>
                 <a id="letter">guess</a>
-                <span id="errorLetter">Only One Letter Only</span>
-                <span id="alreadyGuessed">Letter has already been guessed</span>
+                <span id="errorLetter">Please enter a word or letter</span>
+                <span id="alreadyGuessed">Letter or Word has already been guessed</span>
             </div>
 
             <!-- play again -->
@@ -52,7 +52,7 @@
         </div>
     </main>
     
-    <footer>Cassandra Haydock &copy;</footer>
+    <footer>Cassandra Haydock</footer>
 </body>
 
 </html>
