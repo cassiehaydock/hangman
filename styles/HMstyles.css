@@ -1,11 +1,8 @@
 body{
-    font-family: cursive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(0, 0, 0);
     color: white;
-}
-
-body{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 main{
@@ -22,7 +19,7 @@ main{
     background-color: white;
     color:black;
 
-    padding: 5rem;
+    padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -36,7 +33,7 @@ canvas {
 }
 
 #lines{
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 #errorLetter, #alreadyGuessed{
@@ -61,14 +58,14 @@ input{
 
 a{
     border: none;
-    background-color: black;
+    background-color: rgb(155, 12, 12);
     color:white;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
 
 a:hover{
-    background-color: rgb(155, 12, 12);
+    background-color: rgb(197, 33, 33);
     cursor: pointer;
 }
 
